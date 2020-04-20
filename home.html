@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Día #1</title>
+</head>
+
+<body>
+  <script>
+    //     // En JS siempre se usa la palabra reservada var para definir una variable
+    //     //Variable -> Espacio en Memoria que guarda información
+    //     // Tipos de Dato: String, Number, Boolean, Float
+    //     /*
+    //       String = Cadena de Caracteres (texto) / PSEINT definir como Caracter
+    //       Number = numérico entero / INT Integger / PSEINT definir como entero
+    //       Float = numérico decimal / double / PSEINT definir como real
+    //       Boolean / Bool = verdadero o falso / true - false / PSEINT definir como lógico  
+    //     */
+    // var nombre
+
+    // // prompt creamos una caja de texto para el usuario
+    // nombre = prompt ("Ingrese su nombre: ", "Nombre")
+
+    // // alert generamos una ventana modal informativo
+    // alert("Bienvenido " + nombre)
+
+    // // Accedemos a la consola de nuestro navegador
+    // console.log(nombre)
+
+
+
+
+
+
+
+    //     //OPERADORES ARITMÉTICOS O ALGEBRÁICOS
+    //     // Ctrl + K + C -> Comentar
+    //     // Ctrl + K + U -> Descomentar
+
+    //    var x=5;
+    //    var y=2;
+
+    //    var s=x+y; // Realizamos una suma entre x & y
+    //    var r=x-y; // Realizamos una resta entre x & y
+
+    //    console.log("La suma es de: " + s);
+    //    console.log("la resta es de: " + r);
+
+    //    var d=x/y; // Realizamos una divisón entre x & y
+    //    var multp=x*y; // Realizamos una multiplicación entre x y y
+
+    //    console.log("La división es de: " + d);
+    //    console.log("La multiplicación es de: " + multp);
+
+    //    var mod=x%y; // Consultamos el residuo de la división entre x & y
+    //    console.log("El residuo es: " + mod);
+
+    //    x++; // Realizamos un incremento de x x++ -> 6
+    //    x+=5// x=5    --  x+=5 7
+    //    console.log("Incremento es: " + x);
+
+    //    x--; // Realizamos un decremento o una disminución de x
+    //    console.log("El decremento es: " + x);
+
+
+
+
+
+
+
+
+
+    // //OPERADORES RELACIONALES O COMPARATIVOS
+    // var x=2;
+    // var y='2';
+
+    // //Buenas práctica a la hora de dar nombre a una variable
+    // // Verificamos si x es mayor a y
+    // var mayor1= x>y; // precedida de un dígito
+    // // Verificamos si x es mayor o igual a y
+    // var mayorIgual = x>=y;
+    // // Verificamos si x es menor o igual a y
+    // var menorIgual = x<=y;
+    // // Verificamos si x es menor a y
+    // var menor= x<y;
+    // // Verificamos si x es igual a y (si tienen el mismo valor) 
+    // var _igual= x==y; // antecedida por un underscore / guión al piso (_)
+    // // Verificamos si x es diferente a y
+    // var $diferente= x!=y; //antecedida de un signo dolar (sintx de jquery)
+    // // Se verifica que x tenga el mismo valor y mismo tipo de dato que y
+    // var exactamente = x===y; // NaN (Not A Number)
+
+
+    // console.log("x Mayor a y: " + mayor1);
+    // console.log("x Menor a y: " + menor);
+    // console.log("x igual a y: " + _igual);
+    // console.log("x diferente a y: " + $diferente);
+    // console.log("x mismo valor y mismo tipo de dato que y: " + exactamente);
+
+
+
+
+
+
+
+    // //OPERADORES LÓGICOS
+    // // Y , O, !(negación)
+    // var Variable1=false; 
+    // var $variable2=true;
+    // var resultadoAND=Variable1&&$variable2;
+
+    // /* AND (Y) Si los dos parametros son verdaderos
+    //     & ampersand
+    //     V && V = V
+    //     V && F = F
+    //     F && V = F
+    //     F && F = F
+    // */
+
+    // alert("Resultado and/y: " + resultadoAND);
+
+    // var resultadoOR=Variable1||$variable2;
+
+    // /* OR (O) Es verdadero si una de las dos variables es verdadera
+    //     | pipe
+    //     V || V = V
+    //     V || F = V
+    //     F || V = V
+    //     F || F = F
+    // */
+
+    // alert("Resultado or/o: " + resultadoOR);
+
+
+    // var resultadoNOT=!Variable1;
+
+    // alert("Resultado not/no: " + resultadoNOT);
+
+
+    // ESTRUCTRAS DE CONTROL
+    /*
+        Permiten al sistema trabajar con relación a las decisiones
+        o selecciones del usuario.
+        Se dividen como tal en:
+        - Selecitva (Control If / Else)
+        - Múltiples (Control Switch)
+        - Iterativas (For, While, Do While)
+    */
+    //CONTROL DE FLUJO IF (Estructura Selectiva)
+    //     /*
+    //         Si la condición se cumple, ejecutará una determinada sentencia
+    //         Código spaguetti: Anidación de condiconales IF / ELSE
+    //         if(condición a evaluar){
+    //             sentencia1 a ejecutar
+    //         } else{
+    //             sentencia2 a ejecutar
+    //         }
+    //         PSEINT Si condición Entonces
+    //                 Ejecutar1 
+    //             SiNo
+    //                 Ejecutar2
+
+    //         Parsear un número:
+    //             Pasar un dato string a number
+    //             -> parseInt(respuesta)
+    //     */
+    //    var respuesta = prompt("Ingrese un dígito mayor a 5"); // Prompt Siempre trabaja string
+
+    //    if(respuesta>5){
+    //        alert("Buen trabajo");
+    //        if(respuesta==6){
+    //            alert("El número es igual a 6");
+    //        } else{
+    //            alert("El número no es 6");
+    //        }
+    //    } else{
+    //        alert("No es un número mayor a 5");
+    //    }
+
+
+    // SWITCH (Estructura Selección Múltiple)
+    /*
+      Ejecuta cadena de sentencias siempre y cuando la condición
+      se valide con los casos especificados en nuestro flujo Switch
+    */
+    //   var respuesta=prompt("Ingrese un número del 1 al 3");
+
+    //   switch(respuesta){
+    //       case "1":
+    //         alert("Usted escribió el número uno");
+    //         break;
+
+    //     case "2":
+    //         alert("Usted escribió el número dos");
+    //         break;
+
+    //     case "3":
+    //         alert("Usted escribió el número tres");
+    //         break;
+
+    //     default:
+    //         alert("No es un número entre 1 y 3");    
+    //   }
+
+
+    //BUCLE FOR (Estructura Iterativa)
+    /* Iteración de un arreglo de datos
+      Simplificar procesos
+      Manejo de Eventos
+      Repetición de acciones n veces
+      PSEINT
+      Para i=0 Hasta 10 Con Paso 1 Hacer
+          Escribir "numero ", i
+      FinPara
+
+      iteración-> Aumento o decremento de un elemento
+      for(inicialización variable;delimitación;iteración){
+          sentencia a ejecutar
+      } 
+    */
+    // for (i = 0; i <= 10; i++) {
+    //   document.write(`Número: ${i} <br>`);
+    // }
+
+    // for (i = 10; i >= 0; i -= 2) {
+    //   console.log("Número " + i);
+    // }
+
+
+
+
+
+
+    //BUCLE WHILE (Estructura iterativa)
+    /*
+      Mientras se cumpla una condición, entrará a ejecutar una determinada
+      sentencia
+      While no se sabe el momento en que debe salirse del ciclo
+
+      while(condición){
+          sentencia a ejecutar
+      }
+    */
+    // var i=0;
+
+    // while(i<10){
+    //     console.log("Número:" +i);
+    //     i++;
+    // }
+
+
+
+    // Bucle Do While / Arreglos / Métodos para Arreglos
+    // Métodos para Cadenas / Funciones (variables globales & locales / scope)
+    // Timers
+
+
+
+
+
+
+
+
+
+    //BUCLE DO WHILE
+    /*
+      Explicacion del Bucle Do While, Se ejecuta al menos una sola 
+      vez sin importar si se cumple la condicion
+    */
+    // var i=0;
+
+    // do{
+    //   i++;
+    //   // let num = Math.random(); // mayor que cero y menor que uno
+    //   // let num2 = Math.floor((Math.random() * (11-0))+5); // Math floor redondea al entero inferior
+    //   document.write("Número:" +i + "<br>");
+    //   // console.log(num);
+    //   // alert(num2);
+
+    // } while(i<10);
+
+
+
+
+
+
+
+    // ARREGLOS
+    // /*
+    //   Variable que almacena datos, estos datos se van 
+    //   a manejar desde una posicion 0 
+    // */
+    // var dias=["Lunes", "Martes", "Miércoles", "Jueves",
+    //           "Viernes", "Sábado", "Domingo"];
+    //           for(i=0;i<dias.length-1;i++){
+    //               console.log(dias[i]);
+    //           }
+
+
+
+
+
+
+
+
+
+    //FUNCIONES DE CADENA
+    // var cadena=prompt("Ingrese una palabra o frase");
+
+    //   //hola como estas
+    //   //01234567891011121314 
+    //  alert("Longitud de cadena: "+ cadena.length); // Longitud de una cadena
+    //  alert("Mayúsculas: "+ cadena.toUpperCase()); // convertir toda la cadena a Mayúscula
+    //  alert("Minúsculas: " + cadena.toLowerCase()); // convertir toda la cadena a Minúscula
+    //  alert("Posición 1: " + cadena.charAt(1)); // Mostrar el caracter en una pos. específica
+
+    //  var caracter= prompt("Escriba caracter a buscar");
+    //  alert("Posición de letra:" + cadena.indexOf(caracter)); // Encontrar la pos inicial de x caracter
+    //  alert("Posición última letra: " + cadena.lastIndexOf(caracter)); // Encontrar la pos final de x caracter
+    //  alert("Porción: " + cadena.substr(1,(cadena.length)-1)); // Extraer una subcadena
+    //  document.write(cadena.split("")); // Partir la cadena a partir de x elemento
+
+
+    //FUNCIONES PARA ARREGLOS
+    /*
+     Otros métodos: slice, replace
+    */
+    //  var alpha1= ["A", "B", "C"];
+    //  var alpha2= ["D", "E", "F"];
+    //  var grupoA,grupoB,inverso;
+
+    //  grupoA=alpha1.concat(alpha2); // Concatenamos o agrupamos x cantidad de array
+    //  console.log(grupoA);
+
+    //  grupoB=grupoA.join(" - "); // Con un selector o un símbolo separamos cada elemento
+    //  console.log(grupoB);      // de nuestro array para una mejor lectura
+
+    //  // variable.metodo()
+    //  grupoA.pop();  // Eliminamos el dato de la última posición del arreglo
+    //  console.log(grupoA);
+
+    //  grupoA.push("G");  // Agregamos un dato en la última posición del arreglo
+    //  console.log(grupoA);
+
+    //  grupoA.shift();  // Eliminar el dato de la posición 0 de nuestro arreglo
+    //  console.log(grupoA);
+
+    //  grupoA.unshift("Z"); // Agregar dato en la posición 0 de un arreglo
+    //  console.log(grupoA);
+
+    //  inverso=grupoA.reverse(); // Invierte el orden de nuestro arreglo
+    //  console.log(inverso);
+
+
+    //FUNCIONES
+    /*
+      Permiten optimizar código y simplificar procesos
+      ya que las funciones pueden ser reutilizables.
+      Se definen por medio de la palabra reservada function(){}.
+      Las funciones pueden ser nombradas: function ejemplo(){}
+      Para utilizar una función la invocamos por medio de su nombre: ejemplo()
+    */
+
+    var a=1; b=4; c=3; d=5; e=2; f=10;
+
+    //A pedal
+    var suma;
+
+    suma=a+b;
+    console.log(suma);
+
+    suma=c+d;
+    console.log(suma);
+
+    suma=e+f;
+    console.log(suma);
+
+    // //Usando Funciones
+    // sumarNumeros(a, b);
+    // //loginUser('Pepe', 24 ,'Pepito')
+    // // sumarNumeros(c,d);
+    // // sumarNumeros(e,f);
+    //   //Math.sqrt (square root)
+    // /*
+    //   parámetro -> Apodo para datos con los cuales la función va a trabajar
+    //   argumento -> Es el valor que va a procesar la función 
+
+    //   nombreVariable(argumento)
+
+    //   function nombreVariable(parametro1){
+    //       bloque de código a ejecutar por parte de la función
+    //   }
+    // */
+
+    // // function loginUser(nombre, apellido, edad){
+    // //   console.log("Bienvenido " + nombre + apellido + " tienes " + edad + " años")
+    // // }
+
+    // function sumarNumeros(numero1, numero2, numero3){
+    //     var sumaTotal= numero1+numero2+numero3;
+    //     console.log(sumaTotal);
+    // }
+
+
+
+
+
+    //SCOPE (Alcance)
+    /*
+      -Variable Global: Aquella en la cuál puede ser usada en cualquier parte
+                        de nuestro código. Podemos acceder a ella sin tener problemas
+                        con el Scope.
+                        Por buenas prácticas JS recomienda obviar la palabra reservada
+                        var al declarar una variable global
+      -Variable Local: Únicamente puede ser utilizada en el lugar del código donde
+                      haya sido declarada. Acceder a ella por fuera de su ubicación
+                      genera problemas con el Scope
+      -Scope: Regla que nos permite trabajar con variables globales y locales.
+    */
+
+    // Funciones Callback (Programación)
+    // saludo = 'Pepe' // Variable Global
+
+    // function decencia(txt){
+    //   var tema = 'JS' // Variable Local
+    //   console.log(saludo + " " + tema)
+    // }
+
+    // console.log(tema)
+
+    // //decencia("Bienvenido")
+  </script>
+</body>
+
+</html>

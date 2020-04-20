@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // var pedidoUsuario = prompt('¿Qué desea ordenar?, escoja el tamaño: Personal, Mediana, Familiar'),
+        // pedidoUsuario = pedidoUsuario.toLowerCase();
+
+        // switch(pedidoUsuario){
+        //     case 'personal':
+        //         var pizzaPersonal = prompt('Pollo & Champiñones, Hawaiana o Carnes? Escoja su sabor');
+        //         pizzaPersonal = pizzaPersonal.toLowerCase();
+        //         switch(pizzaPersonal){
+        //             case 'pollo & champiñones':
+        //         }
+        //         document.write('Pedido listo!! Ud ordeno una pizza ' + pedidoUsuario + ' de ' + pizzaPersonal);
+        //         break;
+        //     case 'mediana':
+        //     var pizzaMediana = prompt('Mexicana o Criolla? Escoja su sabor');
+        //         pizzaMediana = pizzaMediana.toLowerCase();
+        //         document.write('Pedido listo!! Ud ordeno una pizza ' + pedidoUsuario + ' de ' + pizzaMediana);
+        //         break;
+        //     default: 
+        //         document.write('La opción no es correcta .l. -.- .l.');
+        // }
+
+        // const multiplo = 2;
+        // for(var i = 0; i < 10; i++){
+        //     var operacion = multiplo * i
+        //     document.write(multiplo + ' * ' + i + ' = ' + operacion + '<br>')
+        // }
+
+        // const multiplo = prompt('ingrese un número del 1 al 10');
+        // for(var i = 0; i < 500; i++){
+        //     var operacion = multiplo * i
+        //     document.write(multiplo + ' * ' + i + ' = ' + operacion + '<br>')
+        // }
+
+        // const multiplo = prompt('ingrese un número del 1 al 10');
+        // var i = 1
+        // var operacion = 0;
+        // while (operacion < 500) {
+        //     operacion = multiplo * i
+        //     document.write(multiplo + ' * ' + i + ' = ' + operacion + '<br>')
+        //     i++
+        // }
+
+        // const multiplo = prompt('ingrese un número del 1 al 10');
+        // var i = 1
+        // while (i <= 10) {
+        //     operacion = multiplo * i
+        //     document.write(multiplo + ' * ' + i + ' = ' + operacion + '<br>')
+        //     i++
+        // }
+
+
+        // for(var i = 0; i < 10; i++){
+        //     var operacion = multiplo * i
+        //     document.write(multiplo + ' * ' + i + ' = ' + operacion + '<br>')
+        // }
+
+        // for(var i = 0; i <= 10; i++){
+        //     for(var j = 0; j <= 10; j++){
+        //         var operacion = j * i;
+        //         document.write(j + ' * ' + i + ' = ' + operacion + '<br>')
+        //     }
+        // }
+
+        // var palabra = prompt('Adivina la palabra');
+        // while (palabra != 'eureka') {
+        //     palabra = prompt('Sigue intentando');
+        //     if (palabra == 'eureka') {
+        //         var elemento = document.getElementById('contenedor')
+        //         elemento.innerHTML += palabra
+        //     }
+        // }
+
+        // var numero1 = prompt('Ingrese un número')
+        // var numero2 = prompt('Ingrese un número')
+
+        // numero1 = parseInt(numero1)
+        // numero2 = parseInt(numero2)
+
+
+        // var suma = numero1 + numero2 // suma = parseInt(numero1) + parseInt(numero2)
+
+        // document.write(suma + '<br>' + 'Jorge')
+        // alert(suma + '\n' + 'Jorge')
+        // console.log(typeof(suma)) // validar el tipo de dato de una variable
+    </script>
+</head>
+
+<body>
+    <!-- <div id="contenedor">
+        Ejemplo
+    </div>
+
+    <script>
+        var palabra = prompt('Adivina la palabra');
+        while (palabra != 'eureka') {
+            palabra = prompt('Sigue intentando');
+            if (palabra == 'eureka') {
+                var elemento = document.getElementById('contenedor')
+                elemento.innerHTML += palabra
+            }
+        }
+    </script> -->
+
+    <h1 id="saludo">
+        Hola 
+    </h1>
+
+    <script>
+        var numero1 = prompt('Ingrese un número')
+        var numero2 = prompt('Ingrese un número')
+
+        numero1 = parseInt(numero1)
+        numero2 = parseInt(numero2)
+
+
+        var suma = numero1 + numero2 // suma = parseInt(numero1) + parseInt(numero2)
+
+        document.write(suma + '<br>' + 'Jorge')
+        alert(suma + '\n' + 'Jorge')
+        console.log(typeof(suma)) // validar el tipo de dato de una variable
+
+        // Manipulacion del DOM (Document Object Model)
+        var etiquetaHTML = document.getElementById('saludo')
+        etiquetaHTML.innerHTML += suma
+    </script>
+</body>
+
+</html>
